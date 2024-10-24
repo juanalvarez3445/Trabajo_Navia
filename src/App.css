@@ -1,0 +1,132 @@
+.todoapp {
+  background: #6C63FF;
+  min-height: 100vh;
+  padding: 2rem;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+.new-todo {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  display: block;
+}
+
+.todo-list {
+  max-width: 600px;
+  margin: 2rem auto;
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  background: white;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  color: #333;
+  position: relative;
+}
+
+.todo-list li.completed label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.toggle {
+  margin-right: 1rem;
+}
+
+.destroy {
+  position: absolute;
+  right: 1rem;
+  border: none;
+  background: none;
+  color: #cc9a9a;
+  cursor: pointer;
+  display: none;
+}
+
+.todo-list li:hover .destroy {
+  display: block;
+}
+
+.destroy:after {
+  content: '×';
+  font-size: 1.4rem;
+}
+
+.edit {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+#footer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.filters a {
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+}
+
+.filters a:hover,
+.filters a.selected {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.clear-completed {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+}
+
+.clear-completed:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
